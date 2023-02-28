@@ -99,7 +99,7 @@
       
 		 <div class="container">
 		 
-			<div class="row text-center"><h1>Key Benefitsss</h1></div>
+			<div class="row text-center"><h1>Key Benefitss</h1></div>
 		 
 		 
 		 </div>
@@ -111,7 +111,7 @@
               <div class="card mb-4 box-shadow">
                 <img class="card-img-top" src="docker.png" alt="Card image cap">
                 <div class="card-body">
-                  <p class="card-text">Consistent and portable development environment with Docker</p>
+                  <p class="card-text">Consistent and portable development environment with Dockerr</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
