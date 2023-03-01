@@ -31,11 +31,11 @@ node{
             def scriptRunner='sudo ./stopscript.sh'           
             def dockerRun= "sudo docker run -p 8082:8080 -d --name ${dockerContainerName} ${dockerImageName}" 
             withCredentials([string(credentialsId: 'deploymentserverpwd', variable: 'dpPWD')]) {
-                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@52.86.100.77" 
-                  sh "sshpass -p ${dpPWD} scp -r stopscript.sh ubuntu@52.86.100.77:/home/ubuntu" 
-                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@52.86.100.77 ${changingPermission}"
-                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@52.86.100.77 ${scriptRunner}"
-                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@52.86.100.77 ${dockerRun}"
+                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@54.237.19.196" 
+                  sh "sshpass -p ${dpPWD} scp -r stopscript.sh ubuntu@54.237.19.196:/home/ubuntu" 
+                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@54.237.19.196 ${changingPermission}"
+                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@54.237.19.196 ${scriptRunner}"
+                  sh "sshpass -p ${dpPWD} ssh -o StrictHostKeyChecking=no ubuntu@54.237.19.196 ${dockerRun}"
             }
             
       
